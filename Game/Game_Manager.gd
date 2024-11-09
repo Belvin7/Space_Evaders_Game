@@ -1,0 +1,34 @@
+extends Node
+
+
+@export var score = 0
+@export var level = 0
+@export var camera: Camera2D
+@export var scoreLabel: Label
+@export var spawner: Node2D
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	level = 0
+	score = 0
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	score = -camera.position.y
+	scoreLabel.text = "Score: " + str(score).pad_decimals(0)
+	var new_lvl = 0
+	if score > 200:
+		new_lvl = 1
+	if score > 500:
+		new_lvl = 2
+	if score > 700:
+		new_lvl = 3
+	_levelAnnouncer(new_lvl)
+	pass
+
+func _levelAnnouncer(lvl: int) -> void:
+	spawner.switchTo(lvl)
+	pass
+	
