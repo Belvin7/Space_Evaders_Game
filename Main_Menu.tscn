@@ -1,0 +1,133 @@
+[gd_scene load_steps=9 format=3 uid="uid://djy8ycwjr65fd"]
+
+[ext_resource type="Texture2D" uid="uid://cvevex0savi2g" path="res://blue-back.png" id="1_em1uu"]
+[ext_resource type="Script" path="res://main_menu.gd" id="1_tsuec"]
+[ext_resource type="FontFile" uid="uid://d3mlpjwrb7iap" path="res://Yang Laen.ttf" id="2_2lf62"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qfvo5"]
+texture = ExtResource("1_em1uu")
+modulate_color = Color(0.585062, 0.585062, 0.585062, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gi6gk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xgpan"]
+bg_color = Color(0.662452, 0.662452, 0.662452, 1)
+corner_radius_top_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2cunf"]
+bg_color = Color(0.180418, 0.170866, 0.165179, 1)
+corner_radius_top_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iyqut"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 5)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 2.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tsuec")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_qfvo5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -155.0
+offset_top = -46.0
+offset_right = 166.0
+offset_bottom = 135.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gi6gk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xgpan")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2cunf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iyqut")
+text = "Start Game "
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gi6gk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xgpan")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2cunf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iyqut")
+text = "Options"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gi6gk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xgpan")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2cunf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iyqut")
+text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -264.0
+offset_top = -211.0
+offset_right = 273.0
+offset_bottom = -124.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.367098, 0.833214, 0.718237, 1)
+theme_override_colors/font_shadow_color = Color(0.46282, 0.0534088, 0.37928, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("2_2lf62")
+theme_override_font_sizes/font_size = 80
+text = "Space Evaders "
+horizontal_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="on_exit_pressed"]
