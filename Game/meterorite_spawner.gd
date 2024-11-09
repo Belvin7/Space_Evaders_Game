@@ -33,3 +33,7 @@ func _process(delta: float) -> void:
 		
 	spawn_bucket += spawn_rate
 	pass
+
+
+func _on_camera_2d_draw() -> void:
+	$CharacterBody2D._physics_process(1)

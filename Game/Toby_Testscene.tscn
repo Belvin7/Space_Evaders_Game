@@ -6,6 +6,7 @@
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(0, 2)
+scale = Vector2(2, 2)
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("scoreText")]
 script = ExtResource("1_kyufr")
@@ -36,3 +37,5 @@ polygon = PackedVector2Array(-67, -172, 290, -195, 219, -110)
 [node name="Meterorite_Spawner" type="Node2D" parent="." node_paths=PackedStringArray("camera")]
 script = ExtResource("3_non7b")
 camera = NodePath("../Camera2D")
+
+[connection signal="draw" from="Camera2D" to="Meterorite_Spawner" method="_on_camera_2d_draw"]
