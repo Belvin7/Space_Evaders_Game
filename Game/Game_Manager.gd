@@ -20,9 +20,9 @@ func _process(delta: float) -> void:
 	scoreLabel.text = "Score: " + str(score).pad_decimals(0)
 	if score > 200:
 		level = 1
-	if score > 300:
-		level = 2
 	if score > 400:
+		level = 2
+	if score > 600:
 		level = 3
 	_levelAnnouncer(level)
 	pass

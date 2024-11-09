@@ -47,7 +47,7 @@ func spawnMeteor(position_sp: Vector2) -> void:
 
 func switchTo(lvl: int) -> void:
 	print("pass to meteor spawner: " + var_to_str(lvl))
-	mslvl = var_to_str(lvl)
+	mslvl = lvl
 	change_radius_based_on_lvl()
 	pass
 
@@ -56,15 +56,16 @@ func change_radius_based_on_lvl() -> void:
 		0:
 			min_angle = -135
 			max_angle -45
-			
+			return
 		1:
 			min_angle = -45
 			max_angle = 45
-			print("fucj this")
+			return
 		2:
 			min_angle = 135
 			max_angle = 45
-	pass
+			return
+	return
 
 func spawn_object_on_circle():
 	# Calculate the center of the camera
