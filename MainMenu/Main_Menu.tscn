@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://djy8ycwjr65fd"]
 
-[ext_resource type="Texture2D" uid="uid://cvevex0savi2g" path="res://blue-back.png" id="1_em1uu"]
-[ext_resource type="Script" path="res://main_menu.gd" id="1_tsuec"]
-[ext_resource type="FontFile" uid="uid://d3mlpjwrb7iap" path="res://Yang Laen.ttf" id="2_2lf62"]
+[ext_resource type="Texture2D" uid="uid://cvevex0savi2g" path="res://MainMenu/blue-back.png" id="1_em1uu"]
+[ext_resource type="Script" path="res://MainMenu/main_menu.gd" id="1_tsuec"]
+[ext_resource type="FontFile" uid="uid://d3mlpjwrb7iap" path="res://MainMenu/Yang Laen.ttf" id="2_2lf62"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qfvo5"]
 texture = ExtResource("1_em1uu")

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://d3mlpjwrb7iap"
-path="res://.godot/imported/Yang Laen.ttf-fbabee7690c09277bdb1e6f9f2707509.fontdata"
+path="res://.godot/imported/Yang Laen.ttf-b2746df01d34de3d3c27ce1d03f42179.fontdata"
 
 [deps]
 
-source_file="res://Yang Laen.ttf"
-dest_files=["res://.godot/imported/Yang Laen.ttf-fbabee7690c09277bdb1e6f9f2707509.fontdata"]
+source_file="res://MainMenu/Yang Laen.ttf"
+dest_files=["res://.godot/imported/Yang Laen.ttf-b2746df01d34de3d3c27ce1d03f42179.fontdata"]
 
 [params]
 
