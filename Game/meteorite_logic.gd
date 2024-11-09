@@ -1,24 +1,14 @@
-extends Control
+extends RigidBody2D
 
-
+var startPos = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	startPos = position
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if position.distance_to(startPos) > 1400:
+		queue_free()
 	pass
-
-
-func on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://Game/Toby_Testscene.tscn")
-	
-
-
-func on_options_pressed() -> void:
-	print(" options pressed ")
-
-
-func on_exit_pressed() -> void:
-	get_tree().quit()
