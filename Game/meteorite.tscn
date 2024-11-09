@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://bh64xj7axoask"]
 
-[ext_resource type="Script" path="res://meteorite_logic.gd" id="1_sjwwj"]
+[ext_resource type="Script" path="res://Game/meteorite_logic.gd" id="1_sjwwj"]
 
 [node name="Meteorite" type="RigidBody2D" groups=["meteor"]]
 collision_layer = 7
-gravity_scale = 0.18
+gravity_scale = 0.0
 script = ExtResource("1_sjwwj")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
