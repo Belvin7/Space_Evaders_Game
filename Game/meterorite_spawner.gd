@@ -9,8 +9,8 @@ var spawn_rate = 4
 var rng = RandomNumberGenerator.new()
 var lvl = 0
 @export var spawn_radius: float = 600.0
-@export var min_angle: float = 0.0
-@export var max_angle: float = 90.0
+@export var min_angle: float = -135
+@export var max_angle: float = -45
 
 var bounds_right = 0
 var bounds_left = 0
@@ -49,6 +49,18 @@ func switchTo(lvl: int) -> void:
 	print("pass to meteor spawner: " + var_to_str(lvl))
 	pass
 
+func change_radius_based_on_lvl() -> void:
+	match lvl:
+		0:
+			min_angle = -135
+			max_angle -45
+		1:
+			min_angle = -45
+			max_angle = 45
+		2:
+			min_angle = 135
+			max_angle = 45
+	pass
 
 func spawn_object_on_circle():
 	# Calculate the center of the camera
