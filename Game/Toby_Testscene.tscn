@@ -1,20 +1,9 @@
-<<<<<<< HEAD
-[gd_scene load_steps=8 format=3 uid="uid://c5mqla1wrudre"]
-=======
 [gd_scene load_steps=5 format=3 uid="uid://c5mqla1wrudre"]
->>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 
 [ext_resource type="Script" path="res://Game/camera_movment.gd" id="1_kyufr"]
 [ext_resource type="Script" path="res://Game/player.gd" id="1_nxkph"]
 [ext_resource type="Script" path="res://Game/meterorite_spawner.gd" id="3_non7b"]
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://cxb4m3qji5m6n" path="res://assets/Foozle_2DS0015_Void_EnvironmentPack/Foozle_2DS0015_Void_EnvironmentPack/Asteroids/PNGs/Asteroid 01 - Base.png" id="4_eof2x"]
-[ext_resource type="Texture2D" uid="uid://7lknijpjj2ql" path="res://assets/Foozle_2DS0015_Void_EnvironmentPack/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/Condesed/Starry background  - Layer 01 - Void.png" id="5_grfyl"]
-[ext_resource type="Texture2D" uid="uid://bsoubqk448tay" path="res://assets/Foozle_2DS0015_Void_EnvironmentPack/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/Split up/Starry background  - Layer 01 - Solid colour.png" id="6_o2r1w"]
-[ext_resource type="Texture2D" uid="uid://dht3tfythcj6x" path="res://assets/Foozle_2DS0015_Void_EnvironmentPack/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/Split up/Starry background  - Layer 03 - Stars.png" id="7_vmclf"]
-=======
 [ext_resource type="Script" path="res://Game/Game_Manager.gd" id="4_uug0f"]
->>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(0, 2)
@@ -48,42 +37,8 @@ polygon = PackedVector2Array(0, -5, -2, 0, 0, -1, 2, 0, 0, -5)
 script = ExtResource("3_non7b")
 camera = NodePath("../Camera2D")
 
-<<<<<<< HEAD
-[node name="Asteroid01-Base" type="Sprite2D" parent="."]
-position = Vector2(202.5, -72.5)
-scale = Vector2(1.28125, 1.28646)
-texture = ExtResource("4_eof2x")
-
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 207.5
-offset_top = -61.0
-offset_right = 247.5
-offset_bottom = -21.0
-
-[node name="StarryBackground-Layer01-Void" type="Sprite2D" parent="."]
-show_behind_parent = true
-position = Vector2(39.9883, -4697.88)
-rotation = 1.57079
-scale = Vector2(1.81794, -8.02703)
-texture = ExtResource("5_grfyl")
-
-[node name="StarryBackground-Layer01-SolidColour" type="Sprite2D" parent="."]
-position = Vector2(-5090, -370)
-scale = Vector2(0.841483, 1.7173)
-texture = ExtResource("6_o2r1w")
-
-[node name="StarryBackground-Layer03-Stars" type="Sprite2D" parent="."]
-position = Vector2(94.5, -4688)
-scale = Vector2(0.513077, -30.9762)
-texture = ExtResource("7_vmclf")
-
-[connection signal="draw" from="Camera2D" to="Meterorite_Spawner" method="_on_camera_2d_draw"]
-=======
 [node name="GameManager" type="Node2D" parent="." node_paths=PackedStringArray("camera", "scoreLabel", "spawner")]
 script = ExtResource("4_uug0f")
 camera = NodePath("../Camera2D")
 scoreLabel = NodePath("../Camera2D/Score")
 spawner = NodePath("../Meterorite_Spawner")
->>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
