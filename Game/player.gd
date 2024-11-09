@@ -4,7 +4,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 @export var camera: Camera2D
-
+@export var gManager: Node2D
 
 
 func _physics_process(delta: float) -> void:
@@ -42,7 +42,7 @@ func _physics_process(delta: float) -> void:
 		if collider.is_in_group("meteor"): # Fiters for meteors
 			#print("Collided with: ", collision.get_collider().name)
 			collider.queue_free() # Deletes Meteor on collision
-	
+			gManager.dmgf()
 
 	#after the character is moved clamp its position to the end of the camera bounds
 	global_position.y = clamp(global_position.y, bounds_up, bounds_down)
