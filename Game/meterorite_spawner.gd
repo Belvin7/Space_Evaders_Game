@@ -7,10 +7,10 @@ var spawn_threshold = 2
 var spawn_bucket = 0
 var spawn_rate = 4
 var rng = RandomNumberGenerator.new()
-var lvl = 0
+var mslvl = 0
 @export var spawn_radius: float = 600.0
-@export var min_angle: float = -135
-@export var max_angle: float = -45
+var min_angle: float = -135
+var max_angle: float = -45
 
 var bounds_right = 0
 var bounds_left = 0
@@ -47,18 +47,20 @@ func spawnMeteor(position_sp: Vector2) -> void:
 
 func switchTo(lvl: int) -> void:
 	print("pass to meteor spawner: " + var_to_str(lvl))
+	mslvl = var_to_str(lvl)
+	change_radius_based_on_lvl()
 	pass
-<<<<<<< HEAD
-=======
 
 func change_radius_based_on_lvl() -> void:
-	match lvl:
+	match mslvl:
 		0:
 			min_angle = -135
 			max_angle -45
+			
 		1:
 			min_angle = -45
 			max_angle = 45
+			print("fucj this")
 		2:
 			min_angle = 135
 			max_angle = 45
@@ -79,4 +81,3 @@ func spawn_object_on_circle():
 
 func get_camera_screen_center() -> Vector2:
 	return Vector2((bounds_right+bounds_left)/2,(bounds_up+bounds_down)/2)
->>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7

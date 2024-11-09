@@ -18,14 +18,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	score = -camera.position.y
 	scoreLabel.text = "Score: " + str(score).pad_decimals(0)
-	var new_lvl = 0
 	if score > 200:
-		new_lvl = 1
-	if score > 500:
-		new_lvl = 2
-	if score > 700:
-		new_lvl = 3
-	_levelAnnouncer(new_lvl)
+		level = 1
+	if score > 300:
+		level = 2
+	if score > 400:
+		level = 3
+	_levelAnnouncer(level)
 	pass
 
 func _levelAnnouncer(lvl: int) -> void:

@@ -15,10 +15,6 @@ run/main_scene="res://MainMenu/Main_Menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://MainMenu/icon.svg"
 
-[dotnet]
-
-project/assembly_name="Space_Evaders_Game"
-
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
