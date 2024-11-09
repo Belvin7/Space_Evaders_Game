@@ -7,7 +7,6 @@
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(0, 2)
-scale = Vector2(2, 2)
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("scoreText")]
 script = ExtResource("1_kyufr")
