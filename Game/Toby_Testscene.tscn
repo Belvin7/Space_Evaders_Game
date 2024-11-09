@@ -1,8 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://c5mqla1wrudre"]
+
+
+[gd_scene load_steps=7 format=3 uid="uid://c5mqla1wrudre"]
+
 
 [ext_resource type="Script" path="res://Game/camera_movment.gd" id="1_kyufr"]
 [ext_resource type="Script" path="res://Game/player.gd" id="1_nxkph"]
+[ext_resource type="Texture2D" uid="uid://qqnv42h2i6kl" path="res://Game/ship_2.png" id="3_3nxbe"]
 [ext_resource type="Script" path="res://Game/meterorite_spawner.gd" id="3_non7b"]
+[ext_resource type="Texture2D" uid="uid://c5ciw6542a2by" path="res://MainMenu/blue-preview.png" id="4_bo88b"]
 [ext_resource type="Script" path="res://Game/Game_Manager.gd" id="4_uug0f"]
 [ext_resource type="AudioStream" uid="uid://bnem2xy3mn6vv" path="res://assets/attack_on_moon.wav" id="5_otg6p"]
 
@@ -12,6 +17,11 @@ position = Vector2(0, 2)
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("scoreText")]
 script = ExtResource("1_kyufr")
 scoreText = NodePath("Score")
+
+[node name="Blue-preview" type="Sprite2D" parent="Camera2D"]
+position = Vector2(101, 9)
+scale = Vector2(2.78021, 2.78021)
+texture = ExtResource("4_bo88b")
 
 [node name="Score" type="Label" parent="Camera2D"]
 offset_left = -570.0
@@ -29,11 +39,14 @@ script = ExtResource("1_nxkph")
 camera = NodePath("../Camera2D")
 gManager = NodePath("../GameManager")
 
-[node name="Polygon2D" type="Polygon2D" parent="Player"]
-polygon = PackedVector2Array(0, -5, -2, 0, 0, -1, 2, 0, 0, -5)
-
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player"]
-polygon = PackedVector2Array(0, -5, -2, 0, 0, -1, 2, 0, 0, -5)
+polygon = PackedVector2Array(0.365854, -3.53659, -2.37805, -2.98781, -2.31707, 1.40244, -0.670732, 2.68293, 1.76829, 2.2561, 3.10976, 1.21951, 2.92683, -3.29268)
+
+[node name="Ship2" type="Sprite2D" parent="Player"]
+texture_filter = 1
+position = Vector2(0.304878, -0.97561)
+scale = Vector2(0.171494, 0.184832)
+texture = ExtResource("3_3nxbe")
 
 [node name="Meterorite_Spawner" type="Node2D" parent="." node_paths=PackedStringArray("camera")]
 script = ExtResource("3_non7b")
