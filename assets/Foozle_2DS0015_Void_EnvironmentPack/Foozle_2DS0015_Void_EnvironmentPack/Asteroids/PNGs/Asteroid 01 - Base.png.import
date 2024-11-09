@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cxb4m3qji5m6n"
+=======
+uid="uid://kfjlqasoumal"
+>>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 path="res://.godot/imported/Asteroid 01 - Base.png-0ed8b53aa9f94735b545afa3c8e145ba.ctex"
 metadata={
 "vram_texture": false

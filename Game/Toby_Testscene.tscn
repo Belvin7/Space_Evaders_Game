@@ -1,47 +1,54 @@
+<<<<<<< HEAD
 [gd_scene load_steps=8 format=3 uid="uid://c5mqla1wrudre"]
+=======
+[gd_scene load_steps=5 format=3 uid="uid://c5mqla1wrudre"]
+>>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 
 [ext_resource type="Script" path="res://Game/camera_movment.gd" id="1_kyufr"]
 [ext_resource type="Script" path="res://Game/player.gd" id="1_nxkph"]
 [ext_resource type="Script" path="res://Game/meterorite_spawner.gd" id="3_non7b"]
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://cxb4m3qji5m6n" path="res://assets/Foozle_2DS0015_Void_EnvironmentPack/Foozle_2DS0015_Void_EnvironmentPack/Asteroids/PNGs/Asteroid 01 - Base.png" id="4_eof2x"]
 [ext_resource type="Texture2D" uid="uid://7lknijpjj2ql" path="res://assets/Foozle_2DS0015_Void_EnvironmentPack/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/Condesed/Starry background  - Layer 01 - Void.png" id="5_grfyl"]
 [ext_resource type="Texture2D" uid="uid://bsoubqk448tay" path="res://assets/Foozle_2DS0015_Void_EnvironmentPack/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/Split up/Starry background  - Layer 01 - Solid colour.png" id="6_o2r1w"]
 [ext_resource type="Texture2D" uid="uid://dht3tfythcj6x" path="res://assets/Foozle_2DS0015_Void_EnvironmentPack/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/Split up/Starry background  - Layer 03 - Stars.png" id="7_vmclf"]
+=======
+[ext_resource type="Script" path="res://Game/Game_Manager.gd" id="4_uug0f"]
+>>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(0, 2)
-scale = Vector2(2, 2)
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("scoreText")]
 script = ExtResource("1_kyufr")
 scoreText = NodePath("Score")
 
 [node name="Score" type="Label" parent="Camera2D"]
-offset_left = -568.0
-offset_top = -320.0
-offset_right = -380.0
-offset_bottom = -262.0
+offset_left = -570.0
+offset_top = -319.0
+offset_right = -493.0
+offset_bottom = -296.0
+text = "ScoreText"
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." node_paths=PackedStringArray("camera")]
+[node name="Player" type="CharacterBody2D" parent="." node_paths=PackedStringArray("camera")]
 position = Vector2(0, 68)
 scale = Vector2(16.4, 16.4)
+collision_mask = 3
 motion_mode = 1
 script = ExtResource("1_nxkph")
 camera = NodePath("../Camera2D")
 
-[node name="Polygon2D" type="Polygon2D" parent="CharacterBody2D"]
+[node name="Polygon2D" type="Polygon2D" parent="Player"]
 polygon = PackedVector2Array(0, -5, -2, 0, 0, -1, 2, 0, 0, -5)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player"]
 polygon = PackedVector2Array(0, -5, -2, 0, 0, -1, 2, 0, 0, -5)
-
-[node name="Polygon2D" type="Polygon2D" parent="."]
-polygon = PackedVector2Array(-67, -172, 290, -195, 219, -110)
 
 [node name="Meterorite_Spawner" type="Node2D" parent="." node_paths=PackedStringArray("camera")]
 script = ExtResource("3_non7b")
 camera = NodePath("../Camera2D")
 
+<<<<<<< HEAD
 [node name="Asteroid01-Base" type="Sprite2D" parent="."]
 position = Vector2(202.5, -72.5)
 scale = Vector2(1.28125, 1.28646)
@@ -73,3 +80,10 @@ scale = Vector2(0.513077, -30.9762)
 texture = ExtResource("7_vmclf")
 
 [connection signal="draw" from="Camera2D" to="Meterorite_Spawner" method="_on_camera_2d_draw"]
+=======
+[node name="GameManager" type="Node2D" parent="." node_paths=PackedStringArray("camera", "scoreLabel", "spawner")]
+script = ExtResource("4_uug0f")
+camera = NodePath("../Camera2D")
+scoreLabel = NodePath("../Camera2D/Score")
+spawner = NodePath("../Meterorite_Spawner")
+>>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7

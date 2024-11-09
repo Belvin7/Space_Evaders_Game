@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cssg4na861ey8"
+=======
+uid="uid://dcrljj685vnk5"
+>>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 path="res://.godot/imported/Earth-Like planet - Without back glow.png-542f291aaa72e7e8d8c055d2df333f56.ctex"
 metadata={
 "vram_texture": false

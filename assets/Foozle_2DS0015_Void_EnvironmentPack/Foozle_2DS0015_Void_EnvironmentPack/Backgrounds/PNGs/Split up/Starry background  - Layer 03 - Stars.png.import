@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dht3tfythcj6x"
+=======
+uid="uid://dbgeg5hcrcjdb"
+>>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 path="res://.godot/imported/Starry background  - Layer 03 - Stars.png-0793547408424b9ed352469c090814d3.ctex"
 metadata={
 "vram_texture": false

@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dptma36vm0ca7"
+=======
+uid="uid://cfexn73oappsx"
+>>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 path="res://.godot/imported/Asteroid - Flame.png-e65d3a8551e8ded23ec22c92e5aee8ee.ctex"
 metadata={
 "vram_texture": false

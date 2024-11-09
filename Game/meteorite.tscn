@@ -1,15 +1,14 @@
-[gd_scene format=3 uid="uid://bh64xj7axoask"]
+[gd_scene load_steps=2 format=3 uid="uid://bh64xj7axoask"]
+
+[ext_resource type="Script" path="res://Game/meteorite_logic.gd" id="1_sjwwj"]
 
 [node name="Meteorite" type="RigidBody2D" groups=["meteor"]]
-collision_layer = 7
-gravity_scale = 0.18
+collision_layer = 6
+gravity_scale = 0.0
+script = ExtResource("1_sjwwj")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(88.3982, 105.479)
-scale = Vector2(1.44303, 1.61706)
 polygon = PackedVector2Array(-46, 10, -7, -42, 67, -2, 37, 21)
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-position = Vector2(83.1217, 107.889)
-scale = Vector2(1.66983, 1.91005)
 polygon = PackedVector2Array(-46, 10, -7, -42, 67, -2, 37, 21)

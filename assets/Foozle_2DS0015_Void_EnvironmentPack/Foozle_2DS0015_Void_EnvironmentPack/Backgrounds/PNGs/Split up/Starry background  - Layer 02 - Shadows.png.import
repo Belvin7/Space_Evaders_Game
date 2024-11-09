@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://sls6syfsxit7"
+=======
+uid="uid://0xj84mus2ohk"
+>>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 path="res://.godot/imported/Starry background  - Layer 02 - Shadows.png-0b1d864e05115d8e37ae2a5cee15e9a9.ctex"
 metadata={
 "vram_texture": false

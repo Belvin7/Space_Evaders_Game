@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://b7w0k4y7qgojs"
+=======
+uid="uid://bt0k8i8wevso5"
+>>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 path="res://.godot/imported/Ship6_turbo_flight_007.png-2658251a232b870e9e08e5b6a7f373e5.ctex"
 metadata={
 "vram_texture": false

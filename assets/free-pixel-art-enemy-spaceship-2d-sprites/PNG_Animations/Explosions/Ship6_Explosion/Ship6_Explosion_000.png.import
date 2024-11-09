@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dmgeyifxu0hee"
+=======
+uid="uid://bhhbgcfxllr2f"
+>>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 path="res://.godot/imported/Ship6_Explosion_000.png-c74c43a250eba77985e3eb373d4dddf6.ctex"
 metadata={
 "vram_texture": false

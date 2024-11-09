@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://bxkssxcawd6tc"
+=======
+uid="uid://hvrby7w00b7n"
+>>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
 path="res://.godot/imported/Ship4_normal_fligjt_006.png-083f3525acae0550748b988ebce3fad4.ctex"
 metadata={
 "vram_texture": false
