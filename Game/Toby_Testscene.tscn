@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c5mqla1wrudre"]
+[gd_scene load_steps=6 format=3 uid="uid://c5mqla1wrudre"]
 
 [ext_resource type="Script" path="res://Game/camera_movment.gd" id="1_kyufr"]
 [ext_resource type="Script" path="res://Game/player.gd" id="1_nxkph"]
 [ext_resource type="Script" path="res://Game/meterorite_spawner.gd" id="3_non7b"]
 [ext_resource type="Script" path="res://Game/Game_Manager.gd" id="4_uug0f"]
+[ext_resource type="AudioStream" uid="uid://bnem2xy3mn6vv" path="res://assets/attack_on_moon.wav" id="5_otg6p"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(0, 2)
@@ -42,3 +43,7 @@ script = ExtResource("4_uug0f")
 camera = NodePath("../Camera2D")
 scoreLabel = NodePath("../Camera2D/Score")
 spawner = NodePath("../Meterorite_Spawner")
+
+[node name="AttackOnMoon" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_otg6p")
+autoplay = true
