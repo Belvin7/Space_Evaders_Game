@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5dtnsr6g52xr"
-path="res://.godot/imported/SpaceShooterAssetPack_Miscellaneous.png-30f299b594c28e0ac0bb00de801d525e.ctex"
+uid="uid://df5727jkelx0i"
+path="res://.godot/imported/Space.png-d8dd89a18ac53cd0fc4a2d0842a8a394.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MainMenu/SpaceShooterAssetPack_Miscellaneous.png"
-dest_files=["res://.godot/imported/SpaceShooterAssetPack_Miscellaneous.png-30f299b594c28e0ac0bb00de801d525e.ctex"]
+source_file="res://GameMap/Space.png"
+dest_files=["res://.godot/imported/Space.png-d8dd89a18ac53cd0fc4a2d0842a8a394.ctex"]
 
 [params]
 

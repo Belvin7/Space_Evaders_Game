@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x1ar75rqtwlu"
-path="res://.godot/imported/SpaceShooterAssetPack_Characters.png-28393d5f354d1e45a9d03759cca2d005.ctex"
+uid="uid://qqnv42h2i6kl"
+path="res://.godot/imported/ship_2.png-129b5127e0da692fbe041f7f24777f9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MainMenu/SpaceShooterAssetPack_Characters.png"
-dest_files=["res://.godot/imported/SpaceShooterAssetPack_Characters.png-28393d5f354d1e45a9d03759cca2d005.ctex"]
+source_file="res://ship_2.png"
+dest_files=["res://.godot/imported/ship_2.png-129b5127e0da692fbe041f7f24777f9c.ctex"]
 
 [params]
 

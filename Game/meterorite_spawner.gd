@@ -48,8 +48,6 @@ func spawnMeteor(position_sp: Vector2) -> void:
 func switchTo(lvl: int) -> void:
 	print("pass to meteor spawner: " + var_to_str(lvl))
 	pass
-<<<<<<< HEAD
-=======
 
 func change_radius_based_on_lvl() -> void:
 	match lvl:
@@ -79,4 +77,3 @@ func spawn_object_on_circle():
 
 func get_camera_screen_center() -> Vector2:
 	return Vector2((bounds_right+bounds_left)/2,(bounds_up+bounds_down)/2)
->>>>>>> 9b402fb86fe1628a1b3be2b0d6f0291f1ffc77e7
