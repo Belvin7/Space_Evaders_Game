@@ -19,13 +19,14 @@ offset_right = -493.0
 offset_bottom = -296.0
 text = "ScoreText"
 
-[node name="Player" type="CharacterBody2D" parent="." node_paths=PackedStringArray("camera")]
+[node name="Player" type="CharacterBody2D" parent="." node_paths=PackedStringArray("camera", "gManager")]
 position = Vector2(0, 68)
 scale = Vector2(16.4, 16.4)
 collision_mask = 3
 motion_mode = 1
 script = ExtResource("1_nxkph")
 camera = NodePath("../Camera2D")
+gManager = NodePath("../GameManager")
 
 [node name="Polygon2D" type="Polygon2D" parent="Player"]
 polygon = PackedVector2Array(0, -5, -2, 0, 0, -1, 2, 0, 0, -5)
