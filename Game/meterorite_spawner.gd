@@ -48,47 +48,24 @@ func spawnMeteor(position_sp: Vector2) -> void:
 func switchTo(lvl: int) -> void:
 	print("pass to meteor spawner: " + var_to_str(lvl))
 	mslvl = lvl
-<<<<<<< HEAD
-	print(change_radius_based_on_lvl())
-=======
 	change_radius_based_on_lvl()
->>>>>>> 5bc9800e6179220625fa5215ed2d9e7605210d23
 	pass
 
-func change_radius_based_on_lvl() -> String:
-	var hallo = "fuck this"
+func change_radius_based_on_lvl() -> void:
 	match mslvl:
 		0:
-			hallo = "fuck1"
-			return hallo
 			min_angle = -135
 			max_angle -45
-<<<<<<< HEAD
-=======
 			return
->>>>>>> 5bc9800e6179220625fa5215ed2d9e7605210d23
 		1:
-			return hallo
 			min_angle = -45
 			max_angle = 45
-<<<<<<< HEAD
-=======
 			return
->>>>>>> 5bc9800e6179220625fa5215ed2d9e7605210d23
 		2:
-			hallo = "fuc3"
-			return hallo
 			min_angle = 135
-<<<<<<< HEAD
-			max_angle = 4
-		_:
-			print("hallo")
-	return hallo	
-=======
 			max_angle = 45
 			return
 	return
->>>>>>> 5bc9800e6179220625fa5215ed2d9e7605210d23
 
 func spawn_object_on_circle():
 	# Calculate the center of the camera
